@@ -1,0 +1,400 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    /*z-index arregla el hecho que las fotos
+    se super pongan sobre este*/
+    z-index: 100;
+    /*para hacer que la cabezera quede fija al scrollear*/
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top:0;
+    right: 0;
+}
+/*imagen de MOULES*/
+.logo img{
+    height: 35px;
+    width: auto;
+    padding-left: 15px;
+}
+/* para que la imagen (Moules) y el titulo(Moules.pe) se alinien y 
+no quede uno encima del otro*/
+.logo{
+    display:flex;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    padding-right: 0px;
+}
+
+.logo-empresa{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-web .menu-horizontal{
+    display:flex;
+    list-style: none;
+    background-color: rgb(48,108,12);
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+.barra-web .nav-menu-link{
+    color: black;
+    text-decoration: none;
+    /*para darle animación al momento de pasar el mouse*/
+    transition: all 0.4s linear;
+}
+.barra-web .nav-menu-link:hover {
+    color:white;
+}
+
+.barra-web .barra-nav{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.barra-nav #celular{
+    display:none;
+}
+
+#check{
+    display:none;
+}
+.checkbtn{
+    display: none;
+}
+
+
+main{
+    padding: 40px 0px;
+}
+/*texto central de MOULES*/
+.titulo{
+    display: flex;
+    font-family: 'sans-serif';
+    font-size: 100px;
+    font-weight: bold;
+    justify-content: center;
+    color: rgb(48,108,12);
+    padding: 0px 0px;
+    text-decoration: none;
+}
+/*texto que está debajo de MOULES*/
+.info{
+    display: flex;
+    font-family: 'sans-serif';
+    font-size: 20px;
+    justify-content: center;
+    padding: 30px 0px;
+    align-items: center;
+}
+
+#encabezado{
+    margin: 0px 0px;
+    display: flex;
+    background:rgb(48,108,12); 
+    color:white; 
+    font-weight:bold;
+    padding: 50px 10px;
+    justify-content: center;
+}
+
+#mas-info{
+    display: flex;
+    background-color: rgba(63, 62, 62, 0.548);
+    margin: 0px 0px;
+    color:white; 
+    font-weight:bold;
+    padding: 50px 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer{
+    background: #f2f2f2;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 10px;;
+}
+
+/*idea de botón
+.boton{
+    display: block;
+    width: 100px;
+    background-color:rgb(48,108,12);
+    color: white;
+    border-radius: 10px;
+    padding: 15px 15px;
+    margin: 20px 60px;
+    text-decoration: none;
+    text-align: center;
+}
+.boton:hover{
+    border: 2px solid rgb(47, 108, 12);
+}*/
+
+main h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.galeria{
+    margin: 30px 30px;
+    box-shadow: 0 4px 8px 0 rgba(47, 108, 12, 0.926), 0 6px 20px 0 rgb(19, 173, 5);
+    float: left;
+    width: 350px;
+    text-decoration: none;
+}
+.galeria img{
+    width: 100%;
+    height: auto;
+}
+.galeria:hover{
+    /*border: 1px solid lightcoral;*/
+    transform: rotate(-3deg);
+}
+.pie{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(47, 108, 12);
+    padding: 10px;
+    font-weight:bold;
+    color:black;
+}
+#fila1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#fila2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.red-social img{
+    height: 30px;
+    width: auto;
+    padding:0 10px;
+}
+
+#conteItemsCarrusel{
+    /*border: 5px solid black;*/
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    background:rgb(48,108,12);
+    align-items: center;
+    justify-content: center;
+}
+
+#titu-lo-mas-vendido{
+    margin: 0px 0px;
+    display: flex;
+    background:rgb(48,108,12); 
+    color:white; 
+    font-weight:bold;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.itemCarrusel{
+    /*border: 1px solid black;*/
+    height: 450px;
+    position: relative;
+}
+
+.tarjetaCarrusel{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flechasCarrusel{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: -1;
+}
+
+.flechasCarrusel a{
+    text-decoration: none;
+    margin: 0 190px;
+    font-size: 40px;
+}
+
+.flechasCarrusel i{
+    color:rgb(27, 65, 5);
+}
+
+#contePuntos{
+    display: flex;
+    justify-content: center;
+    background: rgb(48,108,12);
+    padding: 10px 0;;
+}
+
+#contePuntos a{
+    padding: 0px 10px;
+    font-style: none;
+    text-decoration: none;
+}
+
+#contePuntos a i{
+    color:black;
+}
+
+.itemCarrusel img{
+    width: 290px;
+    height: auto;
+}
+#contePuntos i:hover{
+    color:rgb(255, 255, 255);
+}
+.flechasCarrusel i:hover{
+    color:rgba(27, 65, 5, 0.685);
+}
+
+@media only screen and (max-width: 850px){
+    header{
+        background: rgb(48,108,12);
+    }
+    
+    main{
+        padding-top: 90px;
+    }
+
+    .barra-cel{
+        display: flex;
+        /*width: 100%;*/
+    }
+    .barra-web{
+        display:none;
+    }
+    .barra-nav #celular{
+        display:flex;
+        list-style:none;
+    }
+    .barra-cel .barra-nav{
+        display: flex;
+        height: 80px;
+        width: 100%;
+        justify-content: space-between;
+        max-width: 992px;
+        margin: 0px auto;
+        font-weight: bold;
+    }
+    .barra-cel .nav-menu{
+        display: absolute;
+        margin-right: 40px;
+        list-style: none;
+    }
+    .barra-cel .menu-horizontal{
+        position:fixed;
+        list-style:none;
+        width: 100%;
+        height: 100vh;
+        background:rgba(47, 108, 12, 0.952) ;
+        top:80px;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        margin:0 0;
+        flex-direction: column;
+    }
+    .barra-cel .nav-menu-item{
+        display: block;
+        margin: 45px 0px;
+        line-height: 30px;
+    }
+    .barra-cel .nav-link{
+        color:rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 20px;
+        padding: 7px 13px;
+        border-radius: 3px;
+    }
+    
+    .barra-cel .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background-color: none;
+        transition: 0.5s;
+        color:white;
+    }
+    .checkbtn{
+        display: flex;
+        font-size: 30px;
+        text-align: right;
+        align-items: center;
+        color:white;
+        line-height: 80px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    
+    #check:checked ~.menu-horizontal{
+        right:0;
+    }
+
+    #fila1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #fila2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .flechasCarrusel a{
+        margin: 0 30px;
+    }
+
+    
+
+}
+
